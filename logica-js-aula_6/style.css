@@ -112,8 +112,16 @@ button:disabled {
 
 @media screen and (max-width: 1250px) {
 
+
+
     h1 {
         font-size: 50px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 80%;
     }
 
     .container__botao {
@@ -122,6 +130,7 @@ button:disabled {
 
 
     .texto__paragrafo {
+        text-align: center;
         font-size: 24px;
     }
 
@@ -132,6 +141,7 @@ button:disabled {
     .container__conteudo {
         display: block;
         position: inherit;
+        
     }
 
     .container__informacoes {
