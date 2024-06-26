@@ -9,3 +9,7 @@ A repository to register all my tracks of learning about the web development fro
 ### COMMENTS
 
 Feel free to open the folders and take a look into I'm learning about. If you have some tips or doubts you can reach out with me on my email: `jvpeluzio@gmail.com`. 
+
+## PROJETOS
+
+### 1 [Jogo do número secreto](https://secret-number-game-rust.vercel.app/)
