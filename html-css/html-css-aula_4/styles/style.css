@@ -102,12 +102,15 @@ body{
     text-decoration: none;
 }
 
-.apresentacao_links_link:hover {
+.apresentacao_links_navegacao:hover {
     background-color: var(--cor-hover);
 }
 
 .apresentacao_imagem { 
    width: 50%; 
+   border-radius: 50%;
+   margin-right: 20px;
+   border: 5px solid var(--cor-terciaria);
 }
 
 .rodape {
