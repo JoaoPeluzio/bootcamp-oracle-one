@@ -148,4 +148,11 @@ body{
         width: auto;
     }
 
+    .apresentacao__conteudo__titulo {
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__texto  {
+        text-align: center;
+    }
 }
