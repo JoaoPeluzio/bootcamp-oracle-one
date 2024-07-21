@@ -15,9 +15,9 @@ function app() {
   const botaoParaDescriptografar = document.querySelector(".descriptografar");
   const divAside = document.querySelector(".esconder");
   const botaoCopiar = document.querySelector(".copiar_button");
-  const cardMensagem = document.getElementById('cardMensagem');
+  const cardMensagem = document.getElementById("cardMensagem");
 
-  escondeBotaoCopiar(); 
+  escondeBotaoCopiar();
 
   function capturaTexto() {
     entradaUsuario.addEventListener("input", (e) => {
@@ -57,17 +57,17 @@ function app() {
   async function copiaTexto() {
     try {
       await navigator.clipboard.writeText(divAside.innerHTML);
-      cardMensagem.classList.remove('hidden');
+      cardMensagem.classList.remove("hidden");
       setTimeout(() => {
-        cardMensagem.classList.add('hidden');
+        cardMensagem.classList.add("hidden");
       }, 3000); // Esconde o card após 3 segundos
     } catch (err) {
-      console.error('Erro ao copiar texto: ', err);
-      alert('Falha ao copiar texto');
+      console.error("Erro ao copiar texto: ", err);
+      alert("Falha ao copiar texto");
     }
   }
 
-  botaoCopiar.addEventListener('click', (e) => {
+  botaoCopiar.addEventListener("click", (e) => {
     e.preventDefault();
     copiaTexto();
   });
@@ -95,11 +95,9 @@ function app() {
     botaoCopiar.classList.remove("hidden");
   }
 
-  function escondeImagemAside () {
+  function escondeImagemAside() {
     divAside.classList.remove("aside_imagem_paragrafo");
   }
 }
 
 app();
-
-

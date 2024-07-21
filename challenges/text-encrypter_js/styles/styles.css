@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,17 +7,17 @@
 }
 
 :root {
-  --cor-fundo: var(--Light-blue-light-blue-100, #F3F5FC);
-  --cor-fundo-aside: var(--white, #FFF);
-  --cor-texto-titulo: var(--Dark-blue-dark-blue-300, #0A3871);
-  --cor-texto-textarea: var(--Dark-blue-dark-blue-100, #0A3871);
-  --cor-texto-aside: var(--gray-gray-500, #343A40);
+  --cor-fundo: var(--Light-blue-light-blue-100, #f3f5fc);
+  --cor-fundo-aside: var(--white, #fff);
+  --cor-texto-titulo: var(--Dark-blue-dark-blue-300, #0a3871);
+  --cor-texto-textarea: var(--Dark-blue-dark-blue-100, #0a3871);
+  --cor-texto-aside: var(--gray-gray-500, #343a40);
   --cor-texto--aside-alerta: var(--Gray-gray-400, #495057);
 
   /*cores botoes*/
-  --cor-texto-button: var(--White, #FFFFFF);
-  --cor-hover-button: var(--Dark-blue-dark-blue-300, #0A3871);
-  --cor-background-button: var(--White, #D8DFE8);
+  --cor-texto-button: var(--White, #ffffff);
+  --cor-hover-button: var(--Dark-blue-dark-blue-300, #0a3871);
+  --cor-background-button: var(--White, #d8dfe8);
 
   font-size: 62.5%;
 }
@@ -25,9 +25,29 @@
 .app {
   height: 100vh;
   padding: 2%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: var(--cor-fundo);
+}
+
+.restart-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  border-radius: 5rem;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #ff3333;
+  transform: scale(1.05);
 }
 
 header a {
@@ -40,7 +60,6 @@ header img {
 
 header img:hover {
   transform: scale(1.2);
-
 }
 
 main {
@@ -60,7 +79,6 @@ main {
   justify-content: center;
   height: 100%;
   width: 100%;
-
 }
 
 textarea {
@@ -80,7 +98,6 @@ textarea {
   color: var(--cor-texto-titulo);
   font-weight: 400;
   font-size: 2.5rem;
-
 }
 
 .encriptador_form_input_button_caixa {
@@ -102,7 +119,7 @@ textarea {
   font-weight: 500;
   color: var(--cor-texto-titulo);
   cursor: pointer;
-  border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+  border: 1px solid var(--Dark-blue-dark-blue-300, #0a3871);
   background-color: var(--cor-background-button);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -122,14 +139,16 @@ aside {
 
 #aside_resultado_texto {
   flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--cor-fundo-aside);
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 2rem;
-    height: 85vh;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-fundo-aside);
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+  height: 85vh;
+  justify-content: center;
+
+  padding: 0.5rem;
 }
 
 #aside_resultado_texto img {
@@ -157,7 +176,7 @@ aside {
 
 .copiar_button {
   padding: 1.5rem;
-  margin: 0 2.3rem 2.3rem 2.3rem;
+  margin: 5% 2.3rem 2.3rem 2.3rem;
   border: none;
   border-radius: 1.5rem;
   width: 80%;
@@ -165,7 +184,7 @@ aside {
   font-weight: 500;
   color: var(--cor-texto-titulo);
   cursor: pointer;
-  border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+  border: 1px solid var(--Dark-blue-dark-blue-300, #0a3871);
   background-color: var(--cor-background-button);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -186,14 +205,14 @@ aside {
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  width: 30vw;
-  
+  width: 35vw;
+
   overflow: auto;
   word-break: break-word; /* Quebra palavras longas */
   overflow-wrap: break-word; /* Quebra palavras longas */
   white-space: pre-wrap; /* Preserva espaços em branco e quebra de linha */
 
-  padding: 2rem;
+  padding: 1rem;
 
   font-size: 1.5rem;
   font-weight: 400;
@@ -209,19 +228,30 @@ aside {
 }
 
 #cardMensagem {
-  background-color: #4caf50; /* Cor de fundo verde */
+  position: fixed;
+  bottom: 15rem;
+  right: 13rem;
+  background-color: var(--cor-texto-textarea); /* Cor de fundo verde */
   color: white; /* Cor do texto branco */
   padding: 15px;
   margin-top: 10px;
   border-radius: 5px;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
   animation: fadeOut 3s forwards;
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 footer {
@@ -239,13 +269,26 @@ footer a {
   cursor: pointer;
 }
 
+/*estilizacao de scrollbar*/
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-texto-textarea);
+  border-radius: 1rem;
+}
+
 /*media para tablets*/
 
 @media (max-width: 768px) {
-
   .app {
     flex-direction: column;
-    
   }
 
   main {
@@ -253,7 +296,6 @@ footer a {
     flex-direction: column;
     gap: 5rem;
     margin: 0 4rem 0 4rem;
-    
   }
 
   #encriptador_form {
@@ -278,6 +320,7 @@ footer a {
   }
 
   textarea {
+    padding: 1rem;
     font-size: 2rem;
   }
 
@@ -285,13 +328,13 @@ footer a {
     align-items: center;
     width: 100%;
     height: 30vh;
-
   }
 
   #aside_resultado_texto {
     display: flex;
-    height: 20vh;
     padding: 1rem;
+    width: 100%;
+    height: 35vh;
   }
 
   #aside_resultado_texto img {
@@ -307,7 +350,6 @@ footer a {
     color: var(--cor-texto-aside);
   }
 
-
   .aside_mensagem_resultado_alerta {
     display: block;
     font-size: 1.2rem;
@@ -316,8 +358,13 @@ footer a {
     color: var(--cor-texto--aside-alerta);
   }
 
+  .copiar_button {
+    width: 50%;
+    margin: 10% 0 0 0;
+  }
+
   .esconder {
-    width: 75vw;
+    width: 100%;
   }
 
   footer {
@@ -330,32 +377,30 @@ footer a {
     text-decoration: none;
     color: var(--cor-texto-titulo);
   }
-
-  
 }
 
 /*media para celulares*/
 
 @media (max-width: 480px) {
+  main {
+    margin: 0 2rem 0 2rem;
+  }
 
-main {
-  margin: 0 2rem 0 2rem;
-}
-
-#encriptador_form h1 {
+  #encriptador_form h1 {
     font-size: 2rem;
   }
 
-textarea {
-  font-size: 2rem;
-}
+  textarea {
+    padding: 1%;
+    font-size: 2rem;
+  }
 
-.encriptador_form_input_button_caixa {
-  flex-direction: column;
-  gap: 1.5rem;
-}
+  .encriptador_form_input_button_caixa {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-.encriptador_form_aviso {
+  .encriptador_form_aviso {
     display: flex;
     align-items: center;
     color: var(--cor-texto-aside);
@@ -363,16 +408,16 @@ textarea {
     margin: 2rem 0 2rem 0;
     font-size: 0.9rem;
     text-align: center;
-}
+  }
 
-#aside_mensagem_resultado {
-  font-size: 1.5rem;
-}
+  #aside_mensagem_resultado {
+    font-size: 1.5rem;
+  }
 
-.aside_mensagem_resultado_alerta {
-  font-size: 1rem;
-}
-  
+  .aside_mensagem_resultado_alerta {
+    font-size: 1rem;
+  }
+
   footer {
     font-size: 1rem;
     margin-top: 11rem;
@@ -383,5 +428,4 @@ textarea {
     text-decoration: none;
     color: var(--cor-texto-titulo);
   }
-
 }
