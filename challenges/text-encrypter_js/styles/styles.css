@@ -122,14 +122,14 @@ aside {
 
 #aside_resultado_texto {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--cor-fundo-aside);
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 2rem;
-  height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-fundo-aside);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    height: 85vh;
+    justify-content: center;
 }
 
 #aside_resultado_texto img {
@@ -153,6 +153,75 @@ aside {
   text-align: center;
   font-weight: 400;
   color: var(--cor-texto--aside-alerta);
+}
+
+.copiar_button {
+  padding: 1.5rem;
+  margin: 0 2.3rem 2.3rem 2.3rem;
+  border: none;
+  border-radius: 1.5rem;
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--cor-texto-titulo);
+  cursor: pointer;
+  border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+  background-color: var(--cor-background-button);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copiar_button:hover {
+  background-color: var(--cor-hover-button);
+  color: var(--cor-texto-button);
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.esconder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 30vw;
+  
+  overflow: auto;
+  word-break: break-word; /* Quebra palavras longas */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  white-space: pre-wrap; /* Preserva espaços em branco e quebra de linha */
+
+  padding: 2rem;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  color: var(--cor-texto--aside-alerta);
+}
+
+.aside_imagem_paragrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardMensagem {
+  background-color: #4caf50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 footer {
@@ -238,12 +307,17 @@ footer a {
     color: var(--cor-texto-aside);
   }
 
+
   .aside_mensagem_resultado_alerta {
     display: block;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 400;
     color: var(--cor-texto--aside-alerta);
+  }
+
+  .esconder {
+    width: 75vw;
   }
 
   footer {
