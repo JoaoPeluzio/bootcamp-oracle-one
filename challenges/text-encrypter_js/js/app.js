@@ -10,13 +10,16 @@ function app() {
   const entradaUsuario = document.getElementById(
     "encriptador_form_input_textarea"
   );
-  const saidaUsuario = document.getElementById("aside_resultado_texto");
+  const alertaEscreva = document.querySelector(".encriptador_form_aviso");
   const botaoParaEncriptar = document.querySelector(".criptografar");
   const botaoParaDescriptografar = document.querySelector(".descriptografar");
   const divAside = document.querySelector(".esconder");
+  const divAsideOcultaClass = document.querySelector(".aside_imagem_paragrafo");
   const botaoCopiar = document.querySelector(".copiar_button");
   const cardMensagem = document.getElementById("cardMensagem");
+  const botaoReiniciar = document.getElementById("restartButton");
 
+  escondeMensagemInicial();
   escondeBotaoCopiar();
 
   function capturaTexto() {
@@ -35,7 +38,16 @@ function app() {
       e.preventDefault();
       e.target.value = botaoParaEncriptar;
       const texto = entradaUsuario.value;
-      divAside.innerHTML = texto;
+
+      if (texto === "") {
+        alertaEscreva.classList.remove("hidden");
+        return;
+      } else {
+        alertaEscreva.classList.add("hidden");
+        divAsideOcultaClass.classList.remove("aside_imagem_paragrafo");
+        divAside.innerHTML = texto;
+        mostraBotaoCopiar();
+      }
 
       criptografaTexto();
     });
@@ -48,7 +60,16 @@ function app() {
       e.preventDefault();
       e.target.value = botaoParaDescriptografar;
       const texto = entradaUsuario.value;
-      divAside.innerHTML = texto;
+
+      if (texto === "") {
+        alertaEscreva.classList.remove("hidden");
+        return;
+      } else {
+        alertaEscreva.classList.add("hidden");
+
+        divAside.innerHTML = texto;
+        mostraBotaoCopiar();
+      }
     });
   }
 
@@ -72,9 +93,14 @@ function app() {
     copiaTexto();
   });
 
+  botaoReiniciar.addEventListener("click", (e) => {
+    location.reload();
+  });
+
   function criptografaTexto() {
     let texto = entradaUsuario.value;
     let resultado = "";
+
     for (let i = 0; i < texto.length; i++) {
       if (letras[texto[i]]) {
         resultado += letras[texto[i]];
@@ -83,8 +109,10 @@ function app() {
       }
     }
     divAside.innerHTML = resultado;
-    mostraBotaoCopiar();
-    escondeImagemAside();
+  }
+
+  function escondeMensagemInicial() {
+    alertaEscreva.classList.add("hidden");
   }
 
   function escondeBotaoCopiar() {
