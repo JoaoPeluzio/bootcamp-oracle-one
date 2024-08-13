@@ -12,6 +12,8 @@ Feel free to open the folders and take a look into I'm learning about. If you ha
 
 ## 🚧 PROJETOS
 
-#### 🔗 [Jogo do número secreto](https://secret-number-game-rust.vercel.app/) - [código e repositório](https://github.com/JoaoPeluzio/secret-number-game)
-#### 🔗 [Portfolio template](https://joaopeluzio.github.io/portfolio-template/) - [código e repositório](https://github.com/JoaoPeluzio/portfolio-template)
+#### 🔗 [Jogo do número secreto](https://secret-number-game-rust.vercel.app/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/secret-number-game)
+#### 🔗 [Portfolio template](https://joaopeluzio.github.io/portfolio-template/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/portfolio-template)
+#### 🔗 [WebApp - Criptografia de texto](https://joaopeluzio.github.io/text-encrypter_js/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/text-encrypter_js)
+
  
