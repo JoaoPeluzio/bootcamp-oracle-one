@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Raleway, sans-serif;
+  font-size: 62.5%;
+
+  /*Cores*/
+  --texto-cor-primaria: #464646
+}
+
+body {
+  padding: 2rem 9.5rem 0 9.5rem;
+  height: 100vh;
+}
+
+/*NAVEGACAO*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--texto-cor-primaria);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 22.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1vw;
+}
+
+nav a, ul, li{
+  
+  color: var(--texto-cor-primaria);
+
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-weight: 500;
+}
+
+nav p {
+  
+  font-weight: 700;
+}
+
+/*SECTION ABOUT ME*/
+
+.introduction {
+  display: flex;
+  align-items: center;
+  padding: 3.8rem 0 3.8rem 0;
+  font-size: 1vw;
+}
+
+.introduction__flex {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.introduction h1 {
+  font-size: 3vw;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image img{
+  width: 60%;
+  height: auto;
+}
+
