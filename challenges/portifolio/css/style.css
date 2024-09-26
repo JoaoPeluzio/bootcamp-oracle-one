@@ -9,7 +9,8 @@
   font-size: 62.5%;
 
   /*Cores*/
-  --texto-cor-primaria: #464646
+  --texto-cor-primaria: #464646;
+  --background-color-section-aboutme: #EAF2FD;
 }
 
 body {
@@ -29,13 +30,16 @@ body {
   text-decoration: none;
 }
 
+.logo img {
+  width: 5rem;
+}
+
 nav {
   display: flex;
-  gap: 22.5rem;
   align-items: center;
   justify-content: space-between;
 
-  font-size: 1vw;
+  font-size: 1.2rem;
 }
 
 nav a, ul, li{
@@ -59,7 +63,7 @@ nav p {
   font-weight: 700;
 }
 
-/*SECTION ABOUT ME*/
+/*SECTION INTRODUCTION*/
 
 .introduction {
   display: flex;
@@ -75,16 +79,74 @@ gap: 2rem;
 }
 
 .introduction h1 {
-  font-size: 3vw;
+  font-size: 3.5rem;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .image {
   display: flex;
-  justify-content: flex-end;
+  flex-basis: fit-content;
+  justify-content: center;
 }
 
 .image img{
-  width: 60%;
+  width: 100%;
   height: auto;
 }
+
+.buttons {
+  display: flex;
+  gap: 1%;
+}
+
+.buttons__flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  border: none;
+  background: none;
+
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.buttons__flex img {
+  width: 20%;
+  color: var(--texto-cor-primaria);
+}
+
+/*SECTION ABOUTME*/
+
+.aboutme {
+  position: fixed;
+  right: 0;
+  background-color: var(--background-color-section-aboutme);
+  width: 100%;
+  height: auto;
+  padding: 4rem 9.5rem 4rem 9.5rem;
+  z-index: 10; 
+}
+
+.aboutme__div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.aboutme__div h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--texto-cor-primaria);
+}
+
+.aboutme__div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 
