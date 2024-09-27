@@ -11,11 +11,13 @@
   /*Cores*/
   --texto-cor-primaria: #464646;
   --background-color-section-aboutme: #EAF2FD;
+  --logo-color: #2A7AE4;
+  --page-background-color: #F5F5F5;
 }
 
 body {
-  padding: 2rem 9.5rem 0 9.5rem;
   height: 100vh;
+  background-color: var(--page-background-color);
 }
 
 /*NAVEGACAO*/
@@ -32,23 +34,48 @@ body {
 
 .logo img {
   width: 5rem;
+  border-radius: 35%;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding: 2rem 9.5rem 0 9.5rem;
   font-size: 1.2rem;
 }
 
-nav a, ul, li{
-  
-  color: var(--texto-cor-primaria);
-
+nav ul {
   list-style: none;
-  text-decoration: none;
 }
+
+nav ul li a {
+  color: var(--texto-cor-primaria); /* Mantém a cor do texto */
+  text-decoration: none;
+  position: relative; /* Necessário para o ::after funcionar */
+  padding-bottom: .3rem; /* Espaço extra para a linha */
+
+ 
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: black;
+  left: 0;
+  bottom: 0; /* Posiciona a linha exatamente embaixo do link */
+  transition: width 0.3s ease-in-out; /* Animação suave */
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* Aumenta o tamanho da linha ao passar o mouse */
+}
+
+/*nav ul li a:hover {
+  color: var(--texto-cor-primaria);
+}*/
 
 ul {
   display: flex;
@@ -63,12 +90,13 @@ nav p {
   font-weight: 700;
 }
 
+
 /*SECTION INTRODUCTION*/
 
 .introduction {
   display: flex;
   align-items: center;
-  padding: 3.8rem 0 3.8rem 0;
+  padding: 2rem 9.5rem 0 9.5rem;
   font-size: 1vw;
 }
 
@@ -96,6 +124,8 @@ gap: 2rem;
 .image img{
   width: 100%;
   height: auto;
+
+  border-radius: 35%;
 }
 
 .buttons {
@@ -113,21 +143,36 @@ gap: 2rem;
 
   font-size: 1.3rem;
   font-weight: 500;
+
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Animação suave */
+
 }
 
+.buttons__flex:hover {
+  font-weight: 500;
+  color: var(--texto-cor-primaria);
+  transform: scale(1.2); /* Aumenta o botão visualmente */
+  cursor: pointer; 
+}
+
+.buttons__flex a {
+  text-decoration: none;
+}
+
+
 .buttons__flex img {
-  width: 20%;
+  width: 18%;
   color: var(--texto-cor-primaria);
 }
 
 /*SECTION ABOUTME*/
 
 .aboutme {
-  position: fixed;
   right: 0;
   background-color: var(--background-color-section-aboutme);
   width: 100%;
   height: auto;
+  margin-top: 5.5rem;
   padding: 4rem 9.5rem 4rem 9.5rem;
   z-index: 10; 
 }
@@ -140,7 +185,7 @@ gap: 2rem;
 
 .aboutme__div h1 {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--texto-cor-primaria);
 }
 
@@ -149,4 +194,43 @@ gap: 2rem;
   font-weight: 400;
 }
 
+/*SECTION SKILLS*/
 
+.skills {
+  width: 100%;
+  height: auto;
+
+  padding: 0 9.5rem 0 9.5rem;
+
+  margin-top: 2rem;
+}
+
+.skills__container {
+  
+}
+
+.skills__container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--texto-cor-primaria);
+  text-align: center;
+}
+
+.skills__container__card {
+  display: flex;
+  flex-basis: 33%;
+  gap: 1rem;
+  padding: 1rem;
+  width: 11rem;
+  height: 10.8rem;
+  border-radius: 1rem;
+  background-color: #FFF;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.skills__container__card img {
+  width: 1.rem;
+  height: 2.3rem;
+}
