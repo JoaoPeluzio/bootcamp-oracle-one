@@ -62,11 +62,12 @@ nav ul li a::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
-  background: black;
+  height: 2px; 
+  background: rgb(72, 72, 72);
   left: 0;
   bottom: 0; /* Posiciona a linha exatamente embaixo do link */
   transition: width 0.3s ease-in-out; /* Animação suave */
+  border-radius: 25rem 25rem 25rem 25rem;
 }
 
 nav ul li a:hover::after {
@@ -173,7 +174,7 @@ gap: 2rem;
   width: 100%;
   height: auto;
   margin-top: 5.5rem;
-  padding: 4rem 9.5rem 4rem 9.5rem;
+  padding: 5.5rem 9.5rem 5.5rem 9.5rem;
   z-index: 10; 
 }
 
@@ -200,37 +201,129 @@ gap: 2rem;
   width: 100%;
   height: auto;
 
-  padding: 0 9.5rem 0 9.5rem;
+  padding: 5.5rem 9.5rem 5.5rem 9.5rem;
 
-  margin-top: 2rem;
 }
 
-.skills__container {
-  
-}
-
-.skills__container h1 {
+.skills h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--texto-cor-primaria);
   text-align: center;
 }
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 
 .skills__container__card {
   display: flex;
-  flex-basis: 33%;
   gap: 1rem;
   padding: 1rem;
-  width: 11rem;
-  height: 10.8rem;
-  border-radius: 1rem;
+  width: 16rem;
+    height: 16rem;
   background-color: #FFF;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5%), 0 3px 10px rgb(0 0 0 / 1%);
+
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.skills__container__card:hover {
+  transform: scale(1.10);
+  cursor: pointer;
 }
 
 .skills__container__card img {
   width: 1.rem;
   height: 2.3rem;
 }
+
+
+/*SECTION GRADUATION*/
+
+.graduation {
+  width: 100%;
+  height: auto;
+
+  padding: 5.5rem 9.5rem 5.5rem 9.5rem;
+
+
+  background-color: var(--background-color-section-aboutme);
+}
+ 
+.graduation > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--texto-cor-primaria);
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.graduation__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+  flex-direction: row;
+  
+  width: 100%;
+  height: auto;
+
+  margin-top: 2rem;
+}
+
+.graduation__container__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.graduation__container__main:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.graduation__container__card {
+  flex: 1 1 300px; /* O card ocupará no mínimo 300px e crescerá conforme o espaço disponível */
+  max-width: 23rem; /* Limita o tamanho máximo dos cards */
+  max-height: 23rem; /* Ajusta a altura de acordo com o conteúdo */
+  background-color: #FFF;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5%), 0 3px 10px rgb(0 0 0 / 1%);
+
+}
+
+
+.graduation__container__card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.graduation__container__card__info h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.graduation__container__card__info p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.graduation__container__card img {
+  width: 100%;
+  height: auto;
+}
+
+
