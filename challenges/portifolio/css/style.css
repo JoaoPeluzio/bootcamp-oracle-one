@@ -13,6 +13,7 @@
   --background-color-section-aboutme: #EAF2FD;
   --logo-color: #2A7AE4;
   --page-background-color: #F5F5F5;
+  --button-background: var(--azul-100, #2A7AE4);
 }
 
 body {
@@ -327,3 +328,106 @@ gap: 2rem;
 }
 
 
+.professional {
+  width: 100%;
+  height: auto;
+
+  padding: 5.5rem 9.5rem 5.5rem 9.5rem;
+}
+
+.professional > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--texto-cor-primaria);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.professional__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+}
+
+.professional__container__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.professional__container__img {
+  width: 70%;
+}
+
+.professional__container__card img {
+  width: 100%;
+  height: auto;
+}
+
+.professional__container__info h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.professional__container__info p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.professional__container__info__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.professional__container__info__buttons button:first-child {
+  border: 1px solid var(--button-background);
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+
+
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.professional__container__info__buttons button:first-child a {
+  color: var(--button-background);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.professional__container__info__buttons button:first-child:hover {
+  transform: scale(1.1);
+}
+
+.professional__container__info__buttons button:last-child {
+  border: none;
+  background: var(--button-background);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.professional__container__info__buttons button:last-child:hover {
+  transform: scale(1.1);
+}
+
+.professional__container__info__buttons button:last-child a {
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+.professional__container .professional__container__card:nth-child(2) {
+  flex-direction: row-reverse;
+}
