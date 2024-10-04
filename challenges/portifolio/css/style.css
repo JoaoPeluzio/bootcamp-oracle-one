@@ -290,11 +290,6 @@ gap: 2rem;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.graduation__container__main:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 .graduation__container__card {
   flex: 1 1 300px; /* O card ocupará no mínimo 300px e crescerá conforme o espaço disponível */
   max-width: 23rem; /* Limita o tamanho máximo dos cards */
@@ -306,10 +301,18 @@ gap: 2rem;
 }
 
 
+.graduation__container__main:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
 .graduation__container__card__info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .graduation__container__card__info h1 {
@@ -325,8 +328,11 @@ gap: 2rem;
 .graduation__container__card img {
   width: 100%;
   height: auto;
+
+  object-fit: contain;
 }
 
+/*SECTION PROFESSIONAL*/
 
 .professional {
   width: 100%;
@@ -430,4 +436,133 @@ button a {
 
 .professional__container .professional__container__card:nth-child(2) {
   flex-direction: row-reverse;
+}
+
+/*SECTION CONTACT*/ 
+
+.contact {
+  padding: 5.5rem 9.5rem 5.5rem 9.5rem;
+  width: 100vw;
+  height: auto;
+  background-color: var(--background-color-section-aboutme);
+}
+
+.contact__form__contact__img__container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contact__form__contact__img__container img {
+  width: 30vw;
+  height: auto;
+  aspect-ratio: 4/4;
+
+  border-radius: 1rem;
+}
+
+.contact__form__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  height: auto;
+  gap: 2rem;
+}
+
+.contact__container__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__container__info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact__container__info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.contact__form__label__name {
+  position: absolute;
+  margin: .5rem 0 1rem 1rem;
+  color: #A2A2A2;
+  pointer-events: none;
+
+  font-size: .90rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+
+.contact__form__label__email {
+  position: absolute;
+  margin: .5rem 0 1rem 1rem;
+  color: #A2A2A2;
+  pointer-events: none;
+  font-size: .90rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1.7rem 1.7rem 1.7rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #007bff;
+
+  resize: none;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+  border-color: #007bff;
+}
+
+
+.contact__form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  max-width: 15rem;
+}
+
+.contact__form button:hover {
+  background-color: #0056b3;
+}
+
+/*FOOTER*/
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #464646;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  
 }
