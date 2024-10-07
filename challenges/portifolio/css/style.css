@@ -566,5 +566,140 @@ footer {
 /*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
-  
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .introduction {
+    padding: 2rem;
+  }
+
+  .introduction h1 {
+    font-size: 1.3rem;
+}
+
+.introduction p {
+  font-size: 1rem;
+}
+
+  .buttons__flex {
+    font-size: 1rem;
+  }
+
+  .aboutme {
+    padding: 2rem;
+  }
+
+  .aboutme h1 {
+    font-size: 1.3rem;
+  }
+
+  .aboutme p {
+    font-size: 1rem;
+  }
+
+  .skills { 
+    padding: 2rem;
+  }
+
+  .skills h1 {
+    font-size: 1.37rem;
+  }
+
+  .skills__container {
+    justify-content: center;
+  }
+
+
+  .skills__container__card {
+    width: 14rem;
+    height: 8rem;
+  }
+
+  .graduation {
+    padding: 2rem;
+  }
+
+  .graduation h1 {
+    font-size: 1.37rem;
+  }
+
+  .graduation__container {
+    gap: 2rem;
+  }
+
+  .graduation__container__card {
+    flex: 1 1;
+    width: 18rem;
+    height: 7rem;
+  }
+
+  .professional {
+    padding: 2rem;
+  }
+
+  .professional h1 {
+    font-size: 1.37rem;
+  }
+
+  .professional__container__card {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .professional__container .professional__container__card:nth-child(2) {
+  flex-direction: column;
+}
+
+.contact {
+  padding: 2rem;
+}
+
+.contact__container__info h1 {
+  font-size: 1.37rem;
+}
+
+.contact__container__info p {
+  font-size: 1rem;
+}
+
+.contact__form__contact__img__container img {
+  display: none;
+}
+
+.contact__form button {
+  width: 11rem;
+  padding: 1rem;
+}
+
+}
+
+@media (max-width: 480px) {
+
+  .introduction {
+    flex-direction: column-reverse;
+  }
+
+
+  .buttons__flex {
+    font-size: 1rem;
+  }
+
+.skills__container {
+  justify-content: center;
+}
+
+.graduation__container__card {
+  flex: 1 1;
+  width: 18rem;
+  height: 8rem;
+}
+
 }
