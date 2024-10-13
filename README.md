@@ -16,5 +16,6 @@ Feel free to open the folders and take a look into I'm learning about. If you ha
 #### 🔗 [Portfolio template](https://joaopeluzio.github.io/portfolio-template/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/portfolio-template)
 #### 🔗 [WebApp - Criptografia de texto](https://joaopeluzio.github.io/text-encrypter_js/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/text-encrypter_js)
 #### 🔗 [Portifolio challenge](https://joaopeluzio.github.io/portifolio-model/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/portifolio-model)
+#### 🔗 [Aluramid challenge](https://joaopeluzio.github.io/aluramid/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/aluramid)
 
  
