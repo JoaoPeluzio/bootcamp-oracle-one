@@ -6,12 +6,14 @@ const banner = document.querySelector('.app__image');
 const titulo = document.querySelector('.app__title');
 const botoes = document.querySelectorAll('.app__card-button'); //cria um array de lista de classes
 const startPauseBt = document.querySelector('#start-pause');
+const iniciarOuPausarImg = document.querySelector('#start-pause img')
+const iniciarOuPausarBt = document.querySelector('#start-pause span');
 
 const musicaFocoInput = document.querySelector('#alternar-musica');
 const musica = new Audio('/sons/luna-rise-part-one.mp3');
-const somPlay = new Audio('/sons/play.wav');
-const somPause = new Audio('/sons/pause.mp3');
-const somBeep = new Audio('/sons/beep.mp3');
+const audioPlay = new Audio('/sons/play.wav');
+const audioPausa = new Audio('/sons/pause.mp3');
+const audioTempoFinalizado = new Audio('/sons/beep.mp3');
 
 let tempoDecorridoEmSegundos = 5;
 let intervalodId = null;
@@ -70,8 +72,9 @@ function alterarContexto(contexto) {
 
 const contagemRegressiva = () => {
   if(tempoDecorridoEmSegundos <= 0) {
+    //audioTempoFinalizado.play(); //audio executa quando cronometro zera
+    alert('Tempo esgotado!');
     zerar();
-    console.log('Tempo esgotado!');
     return;
   }
   tempoDecorridoEmSegundos -= 1;
@@ -82,17 +85,20 @@ startPauseBt.addEventListener('click', iniciarOuPausar);
 
 function iniciarOuPausar() {
 
-  //
-
   if(intervalodId) {
+    audioPausa.play(); //audio executa quando cronometro inicia
+    iniciarOuPausarImg.src = '/imagens/play_arrow.png';
     zerar();
     return;
   }
-
+  audioPlay.play(); //audio executa quando cronometro para
+  iniciarOuPausarImg.src = '/imagens/pause.png';
   intervalodId = setInterval(contagemRegressiva, 1000);
+  iniciarOuPausarBt.textContent = 'Pausar';
 };
 
 function zerar() {
   clearInterval(intervalodId);
+  iniciarOuPausarBt.textContent = 'Começar';
   intervalodId = null;
 };
