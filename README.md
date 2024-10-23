@@ -17,6 +17,6 @@ Feel free to open the folders and take a look into I'm learning about. If you ha
 #### 🔗 [WebApp - Criptografia de texto](https://joaopeluzio.github.io/text-encrypter_js/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/text-encrypter_js)
 #### 🔗 [Portifolio challenge](https://joaopeluzio.github.io/portifolio-model/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/portifolio-model)
 #### 🔗 [Aluramid challenge](https://joaopeluzio.github.io/aluramid/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/aluramid)
-#### 🔗 [Aluramid challenge](https://joaopeluzio.github.io/fokus/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/fokus)
+#### 🔗 [Pomodoro Fokus](https://joaopeluzio.github.io/fokus/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/fokus)
 
  
