@@ -1,29 +1,17 @@
-/*
+const pegaCep = fetch('https://viacep.com.br/ws/01001000/json/')
+.then(resposta => resposta.json())
+.then(r => {
 
---- Código da conversa versão síncrono ---
+        if (r.erro) {
+           throw Error('Esse cep não eiste!') 
+        } else {
+            console.log(r);
+        }
+    console.log(r)})
+.catch(erro => console.log(erro))
+.finally(mensagem => console.log('Processamento concluído!'));
 
-console.log("Mandando oi pro amigo!");
+console.log(pegaCep);
 
-function mandaMensagem() {
-    console.log("Tudo bem?");
-    console.log("Vou te mandar uma solicitação!");
-    console.log("Solicitação recebida!");
-}
-
-mandaMensagem();
-
-console.log("Tchau tchau!");
-
-*/
-
-console.log("Mandando oi pro amigo!");
-
-function mandaMensagem() {
-    console.log("Tudo bem?");
-    console.log("Vou te mandar uma solicitação!");
-    console.log("Solicitação recebida!");
-}
-
-setTimeout(mandaMensagem, 5000);
-
-console.log("Tchau tchau!");
+//then ocorre quando a promessa retorna resolvida
+//catch ocorre quando a promessa é rejeitada 
