@@ -15,7 +15,7 @@ mandaMensagem();
 console.log("Tchau tchau!");
 
 */
-
+/*
 console.log("Mandando oi pro amigo!");
 
 function mandaMensagem() {
@@ -27,3 +27,7 @@ function mandaMensagem() {
 setTimeout(mandaMensagem, 5000);
 
 console.log("Tchau tchau!");
+*/
+
+//fazendo uma async function
+
