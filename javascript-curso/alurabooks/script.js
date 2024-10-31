@@ -1,33 +1,40 @@
-/*
+async function buscaEndereco(cep) {
 
---- Código da conversa versão síncrono ---
+    const mensagemErro = document.getElementById('erro');
+    mensagemErro.innerHTML = '';
+    
+    try {
+        const consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    
+        const consultaCEPbinaryToJson = await consultaCEP.json(); //convertemos o binario que vem da API para json
 
-console.log("Mandando oi pro amigo!");
+        if(consultaCEPbinaryToJson.erro) {
+            throw new Error(`Não foi possível buscar o endereço. Código de status: ${consultaCEPbinaryToJson.status}`);
+        } //fazemos o tratamento do erro, caso nao consiga encontrar o que foi pedido.
 
-function mandaMensagem() {
-    console.log("Tudo bem?");
-    console.log("Vou te mandar uma solicitação!");
-    console.log("Solicitação recebida!");
+        const cidade = document.getElementById('cidade');
+        const logradouro = document.getElementById('endereco');
+        const estado = document.getElementById('estado');
+
+        cidade.value = consultaCEPbinaryToJson.localidade;
+        logradouro.value = consultaCEPbinaryToJson.logradouro;
+        estado.value = consultaCEPbinaryToJson.uf;
+        
+        console.log('Endereço:', consultaCEPbinaryToJson);
+
+        return consultaCEPbinaryToJson; //retorna o endereço caso tenha sido encontrado.
+    } catch (erro) {
+        mensagemErro.innerHTML = `<p>CEP invalido!</p>`
+        console.log('Não foi possível buscar o endereço: ' + erro);
+        return;
+    }
 }
 
-mandaMensagem();
+//pegando o cep via campo cep
 
-console.log("Tchau tchau!");
+const cep = document.getElementById('cep');
+cep.addEventListener('focusout', () => buscaEndereco(cep.value));
 
-*/
-/*
-console.log("Mandando oi pro amigo!");
 
-function mandaMensagem() {
-    console.log("Tudo bem?");
-    console.log("Vou te mandar uma solicitação!");
-    console.log("Solicitação recebida!");
-}
 
-setTimeout(mandaMensagem, 5000);
-
-console.log("Tchau tchau!");
-*/
-
-//fazendo uma async function
 
