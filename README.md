@@ -18,5 +18,6 @@ Feel free to open the folders and take a look into I'm learning about. If you ha
 #### 🔗 [Portifolio challenge](https://joaopeluzio.github.io/portifolio-model/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/portifolio-model)
 #### 🔗 [Aluramid challenge](https://joaopeluzio.github.io/aluramid/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/aluramid)
 #### 🔗 [Pomodoro Fokus](https://joaopeluzio.github.io/fokus/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/fokus)
+#### 🔗 [Alurabooks](https://joaopeluzio.github.io/alurabooks/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/alurabooks)
 
  
