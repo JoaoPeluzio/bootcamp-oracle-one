@@ -19,8 +19,9 @@ function constroiCard(titulo, descricao, url, imagem) {
 }
 
 async function listaVideos() {
-    const listaApi = await conectaApi.listaVideos();
-    listaApi.forEach(elemento => lista.appendChild(constroiCard(elemento.titulo, elemento.descricao, elemento.imagem)));
+    const listaApi = await conectaApi.listaVideo();
+    
+    listaApi.forEach(elemento => lista.appendChild(constroiCard(elemento.titulo, elemento.descricao,elemento.url, elemento.imagem)));
 }
 
 listaVideos();
