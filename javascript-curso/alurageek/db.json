@@ -1,0 +1,23 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Camiseta Geek",
+        "price": 49.99,
+        "image": "url-da-imagem"
+      },
+      {
+        "id": 2,
+        "name": "Caneca Star Wars",
+        "price": 29.99,
+        "image": "url-da-imagem"
+      },
+      {
+        "id": 3,
+        "name": "Action Figure Super Mario",
+        "price": 99.99,
+        "image": "url-da-imagem"
+      }
+    ]
+  }
+  

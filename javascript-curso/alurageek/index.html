@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraGeek</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>AluraGeek</h1>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <!-- Seção de Produtos -->
+    <section class="products-section">
+      <h2>Produtos</h2>
+      <div id="products-list" class="products-list">
+        <!-- Adicionar produtos aqui -->
+
+      </div>
+    </section>
+
+    <!-- Formulário de Adição de Produtos -->
+    <section class="form-section">
+      <h2>Adicionar Produto</h2>
+      <form id="product-form">
+        <input type="text" id="product-name" placeholder="Nome do produto" required>
+        <input type="number" id="product-price" placeholder="Preço do produto" required>
+        <input type="url" id="product-image" placeholder="URL da imagem do produto" required>
+        <button type="submit">Adicionar Produto</button>
+        <button type="button" id="clear-form">Limpar Formulário</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <h3>AluraGeek</h3>
+    <p>DESENVOLVIDO POR JOÃO VICTOR PELUZIO</p>
+    <p>ALURA LATAM - 2024</p>
+  </footer>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
