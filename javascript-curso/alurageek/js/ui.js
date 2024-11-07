@@ -1,8 +1,5 @@
 const produtoLista = document.getElementById('product-list');
 const produtoForm = document.getElementById('product-form');
-const nomeProduto = document.getElementById('product-name').value;
-const precoProduto = parseFloat(document.getElementById('product-price').value);
-const imgProduto = document.getElementById('product-image').value;
 
 
 // função para exibir produtos na tela
@@ -28,9 +25,9 @@ export function mostraProdutos(produtos) {
 //função para pegar os dados do formulario
 
 export function pegaDadosForm() {
-    const nomeProduto = document.getElementById('').value;
-    const precoProduto = parseFloat(document.getElementById('').value);
-    const imgProduto = document.getElementById('').value;
+    const nomeProduto = document.getElementById('product-name').value;
+    const precoProduto = parseFloat(document.getElementById('product-price').value);
+    const imgProduto = document.getElementById('product-image').value;
     
     return {
         nome: nomeProduto,
@@ -51,7 +48,9 @@ export function previneEnvioPadraoForm (onSubmit) {
 // função para limpar o formulario 
 
 export function limpaForm () {
-    nomeProduto, precoProduto, imgProduto = '';
+    document.getElementById('product-name').value = '';
+    document.getElementById('product-price').value = '';
+    document.getElementById('product-image').value = '';
     produtoForm.reset();
 };
 //função para limpar o formulario no clique
@@ -59,6 +58,6 @@ export function limpaForm () {
 export function limpaOForm(onClear) {
     const botaoLimpaForm = document.getElementById('clear-form');
     botaoLimpaForm.addEventListener('click', () => {
-        onClear(limpaForm);
+        onClear();
     });
 }
