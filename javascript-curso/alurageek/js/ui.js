@@ -51,13 +51,12 @@ export function limpaForm () {
     document.getElementById('product-name').value = '';
     document.getElementById('product-price').value = '';
     document.getElementById('product-image').value = '';
-    produtoForm.reset();
 };
 //função para limpar o formulario no clique
 
-export function limpaOForm(onClear) {
+export function limpaOForm() {
     const botaoLimpaForm = document.getElementById('clear-form');
     botaoLimpaForm.addEventListener('click', () => {
-        onClear();
+        limpaForm();
     });
 }

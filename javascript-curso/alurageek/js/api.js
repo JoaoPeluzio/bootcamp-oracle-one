@@ -1,4 +1,4 @@
-const apiUrl = 'https://localhost:300/products';
+const apiUrl = 'http://localhost:3000/products';
 
 
 //pegando produto da api
@@ -14,6 +14,7 @@ export async function pegarProdutos() {
         return await resposta.json();
     } catch (error){
         console.error('Erro ao carregar produtos.', error);
+        return[];
     }
 
 }
@@ -38,8 +39,7 @@ export async function adicionaProdutos(produto) {
         return await resposta.json();
 
     } catch (error) {
-        console.error('Erro: ', error);
-        throw error;
+        console.error('Erro ao adicionar produto. ', error);
     }
 }
 
