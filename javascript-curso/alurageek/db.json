@@ -1,28 +1,22 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Camiseta Geek",
-      "price": 49.99,
-      "image": "url-da-imagem"
+      "id": "6625",
+      "nome": "Caneca Star Wars R2D2 M",
+      "preco": 23.98,
+      "imagem": "https://m.media-amazon.com/images/I/41MIxdiEcDL._AC_SX450_.jpg"
     },
     {
-      "id": "2",
-      "name": "Caneca Star Wars",
-      "price": 29.99,
-      "image": "url-da-imagem"
+      "id": "69ba",
+      "nome": "Caneta Marvel Preta",
+      "preco": 79.99,
+      "imagem": "https://images.tcdn.com.br/img/img_prod/1220230/caneta_metalica_marvel_1_0mm_ed_limitada_molin_2035_1_645961abd6f2d04e9d4e1b91b8f357d9.jpg"
     },
     {
-      "id": "3",
-      "name": "Action Figure Super Mario",
-      "price": 99.99,
-      "image": "url-da-imagem"
-    },
-    {
-      "id": "6d21",
-      "nome": "Camisa",
-      "preco": 5,
-      "imagem": "https://unsplash.com/photos/a-glass-of-iced-coffee-next-to-a-glass-of-iced-coffee-ktnQNY_zY34"
+      "id": "9f2c",
+      "nome": "Camiseta Geek Bazinga (Preto, G)",
+      "preco": 78.98,
+      "imagem": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR7l9QUaIpVzV8LikJzaC6kp8n646xW9lpEc8IAmm8ts1lpOW0Tv-BL48BKJzVP_orjFDYbH1z7he5Pf-SPe24piVltdCOIjcYQpiOtgxF06Y-o12OhT1QA8A&usqp=CAE"
     }
   ]
 }

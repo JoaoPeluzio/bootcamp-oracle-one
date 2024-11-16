@@ -13,7 +13,7 @@ export function mostraProdutos(produtos) {
                     <div class="card-body">
                     <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                     <h5 class="card-title">${produto.nome}</h5>
-                    <p class="card-text">Preço: ${produto.preco}</p>
+                    <p class="card-text">Preço: <strong>R$ ${produto.preco}</strong></p>
                     <a href="#" class="btn btn-primary">Ver mais</a> `;
                     
                     produtoLista.appendChild(produtoCard);
@@ -60,3 +60,5 @@ export function limpaOForm() {
         limpaForm();
     });
 }
+
+limpaOForm();
