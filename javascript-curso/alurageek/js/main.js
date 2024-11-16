@@ -26,7 +26,7 @@ async function adicionaNovoProduto() {
     }
 }
 
-adicionaNovoProduto();
+previneEnvioPadraoForm(adicionaNovoProduto);
 
 carregaProdutos();
 

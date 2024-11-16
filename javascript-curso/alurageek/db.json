@@ -1,226 +1,28 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Camiseta Geek",
       "price": 49.99,
       "image": "url-da-imagem"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Caneca Star Wars",
       "price": 29.99,
       "image": "url-da-imagem"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Action Figure Super Mario",
       "price": 99.99,
       "image": "url-da-imagem"
     },
     {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 4
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 5
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 6
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 7
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 8
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 9
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 10
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 11
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 12
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 13
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 14
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 15
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 16
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 17
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 18
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 19
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 20
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 21
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 22
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 23
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 24
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 25
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 26
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 27
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 28
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 29
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 30
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 31
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 32
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 33
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 34
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 35
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 36
-    },
-    {
-      "nome": "",
-      "preco": null,
-      "imagem": "",
-      "id": 37
+      "id": "6d21",
+      "nome": "Camisa",
+      "preco": 5,
+      "imagem": "https://unsplash.com/photos/a-glass-of-iced-coffee-next-to-a-glass-of-iced-coffee-ktnQNY_zY34"
     }
   ]
 }
