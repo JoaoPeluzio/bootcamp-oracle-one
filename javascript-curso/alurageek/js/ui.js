@@ -39,7 +39,7 @@ export function pegaDadosForm() {
 //função para previnir o padrão de envio do formulario
 
 export function previneEnvioPadraoForm (onSubmit) {
-    produtoForm = addEventListener('submit', (e) => {
+    produtoForm.addEventListener('submit', (e) => {
         e.preventDefault();
         onSubmit();
     });
