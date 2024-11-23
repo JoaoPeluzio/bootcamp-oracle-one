@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "6625",
-      "nome": "Caneca Star Wars R2D2 M",
+      "nome": "Caneca Star Wars",
       "preco": 23.98,
       "imagem": "https://m.media-amazon.com/images/I/41MIxdiEcDL._AC_SX450_.jpg"
     },
@@ -14,9 +14,15 @@
     },
     {
       "id": "9f2c",
-      "nome": "Camiseta Geek Bazinga (Preto, G)",
+      "nome": "Camiseta Geek Bazinga",
       "preco": 78.98,
       "imagem": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR7l9QUaIpVzV8LikJzaC6kp8n646xW9lpEc8IAmm8ts1lpOW0Tv-BL48BKJzVP_orjFDYbH1z7he5Pf-SPe24piVltdCOIjcYQpiOtgxF06Y-o12OhT1QA8A&usqp=CAE"
+    },
+    {
+      "id": "17cd",
+      "nome": "Guarda-Chuva Spider-Man ",
+      "preco": 64.98,
+      "imagem": "https://imgs.casasbahia.com.br/1565826129/1xg.jpg"
     }
   ]
 }
