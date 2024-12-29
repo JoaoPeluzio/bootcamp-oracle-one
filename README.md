@@ -20,6 +20,6 @@ Feel free to open the folders and take a look into I'm learning about. If you ha
 #### 🔗 [Pomodoro Fokus](https://joaopeluzio.github.io/fokus/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/fokus)
 #### 🔗 [Alurabooks](https://joaopeluzio.github.io/alurabooks/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/alurabooks)
 #### 🔗 AluraGeekStore - [código e repositório](https://github.com/JoaoPeluzio/geek-store)
-
+#### 🔗 [Organo](https://organo-eta-eight.vercel.app/) - 🔗 [código e repositório](https://github.com/JoaoPeluzio/organo)
 
  
