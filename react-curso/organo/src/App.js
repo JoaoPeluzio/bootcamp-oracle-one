@@ -4,6 +4,7 @@ import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
 import { v4 as uuidv4 } from 'uuid';
+import Colaborador from "./componentes/Colaborador";
 
 function App() {
 
@@ -218,8 +219,8 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial)
 
-  function deletarColaborador () {
-    console.log('deletando colaborador')
+  function deletarColaborador (id) {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   }
 
   function mudarCorDoTime(cor, id) {
@@ -231,10 +232,20 @@ function App() {
     }))
   }
 
+  function cadastrarTime(novoTime) {
+    setTimes([ ...times, { ...novoTime , id: uuidv4()} ])
+  }
+
   return (
     <div>
       <Banner />
-      <Formulario times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
+
+      <Formulario
+        cadastrarTime={cadastrarTime}
+        times={times.map(time => time.nome)} 
+        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
+      />
+
       <section className="times">
         <h1>Minha organização</h1>
         {times.map((time, indice) => 
